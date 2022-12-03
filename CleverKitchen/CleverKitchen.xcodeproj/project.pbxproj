@@ -13,6 +13,10 @@
 		04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46952937FDB8002E2BBA /* CleverKitchen.xcdatamodeld */; };
 		04CB46992937FDB9002E2BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CB46982937FDB9002E2BBA /* Assets.xcassets */; };
 		04CB469C2937FDB9002E2BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB469A2937FDB9002E2BBA /* LaunchScreen.storyboard */; };
+		04CB46A42938057B002E2BBA /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A32938057B002E2BBA /* SignInController.swift */; };
+		04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A5293805B0002E2BBA /* SignUpController.swift */; };
+		04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A729380D1C002E2BBA /* UIExtensions.swift */; };
+		04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A9293821D2002E2BBA /* CKTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		04CB46982937FDB9002E2BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CB469B2937FDB9002E2BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CB469D2937FDB9002E2BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CB46A32938057B002E2BBA /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		04CB46A5293805B0002E2BBA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		04CB46A729380D1C002E2BBA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		04CB46A9293821D2002E2BBA /* CKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				04CB468C2937FDB8002E2BBA /* AppDelegate.swift */,
+				04CB46A729380D1C002E2BBA /* UIExtensions.swift */,
 				04CB468E2937FDB8002E2BBA /* SceneDelegate.swift */,
 				04CB46922937FDB8002E2BBA /* Main.storyboard */,
+				04CB46A5293805B0002E2BBA /* SignUpController.swift */,
 				04CB46982937FDB9002E2BBA /* Assets.xcassets */,
 				04CB469A2937FDB9002E2BBA /* LaunchScreen.storyboard */,
+				04CB46A32938057B002E2BBA /* SignInController.swift */,
+				04CB46A9293821D2002E2BBA /* CKTextField.swift */,
 				04CB469D2937FDB9002E2BBA /* Info.plist */,
 				04CB46952937FDB8002E2BBA /* CleverKitchen.xcdatamodeld */,
 			);
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */,
+				04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */,
 				04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */,
+				04CB46A42938057B002E2BBA /* SignInController.swift in Sources */,
+				04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */,
 				04CB468D2937FDB8002E2BBA /* AppDelegate.swift in Sources */,
 				04CB468F2937FDB8002E2BBA /* SceneDelegate.swift in Sources */,
 			);
@@ -292,8 +308,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,8 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
