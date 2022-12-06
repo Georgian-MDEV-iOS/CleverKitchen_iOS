@@ -17,6 +17,7 @@
 		04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A5293805B0002E2BBA /* SignUpController.swift */; };
 		04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A729380D1C002E2BBA /* UIExtensions.swift */; };
 		04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A9293821D2002E2BBA /* CKTextField.swift */; };
+		A961932B293FBC09006D3FD5 /* AddRecipe_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961932A293FBC09006D3FD5 /* AddRecipe_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		04CB46A5293805B0002E2BBA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		04CB46A729380D1C002E2BBA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		04CB46A9293821D2002E2BBA /* CKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextField.swift; sourceTree = "<group>"; };
+		A961932A293FBC09006D3FD5 /* AddRecipe_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				04CB46A9293821D2002E2BBA /* CKTextField.swift */,
 				04CB469D2937FDB9002E2BBA /* Info.plist */,
 				04CB46952937FDB8002E2BBA /* CleverKitchen.xcdatamodeld */,
+				A961932A293FBC09006D3FD5 /* AddRecipe_ViewController.swift */,
 			);
 			path = CleverKitchen;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A961932B293FBC09006D3FD5 /* AddRecipe_ViewController.swift in Sources */,
 				04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */,
 				04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */,
 				04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */,
