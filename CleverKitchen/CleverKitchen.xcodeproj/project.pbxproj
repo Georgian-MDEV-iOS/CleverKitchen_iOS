@@ -17,6 +17,7 @@
 		04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A5293805B0002E2BBA /* SignUpController.swift */; };
 		04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A729380D1C002E2BBA /* UIExtensions.swift */; };
 		04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A9293821D2002E2BBA /* CKTextField.swift */; };
+		E5165759293EDB460058414D /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5165758293EDB460058414D /* RecipeDetailsController.swift */; };
 		E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8AD293EA73F00B96845 /* RecipeModel.swift */; };
 		E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B0293EA84400B96845 /* RecipeData.swift */; };
 		E573D8B3293EB2AE00B96845 /* ViewRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */; };
@@ -36,6 +37,7 @@
 		04CB46A5293805B0002E2BBA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		04CB46A729380D1C002E2BBA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		04CB46A9293821D2002E2BBA /* CKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextField.swift; sourceTree = "<group>"; };
+		E5165758293EDB460058414D /* RecipeDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsController.swift; sourceTree = "<group>"; };
 		E573D8AD293EA73F00B96845 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		E573D8B0293EA84400B96845 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecipesController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				04CB469D2937FDB9002E2BBA /* Info.plist */,
 				04CB46952937FDB8002E2BBA /* CleverKitchen.xcdatamodeld */,
 				E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */,
+				E5165758293EDB460058414D /* RecipeDetailsController.swift */,
 			);
 			path = CleverKitchen;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */,
 				04CB46A42938057B002E2BBA /* SignInController.swift in Sources */,
 				04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */,
+				E5165759293EDB460058414D /* RecipeDetailsController.swift in Sources */,
 				E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */,
 				E573D8B5293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift in Sources */,
 				E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */,
