@@ -457,7 +457,7 @@ Thomas Keller</string>
         <!--Recipe Details Scene-->
         <scene sceneID="oKb-lF-KWg">
             <objects>
-                <viewController title="Recipe Details Scene" id="013-ne-sVj" customClass="RecipeDetailsController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Recipe Details Scene" id="013-ne-sVj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gzh-lB-l88">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -515,9 +515,6 @@ Thomas Keller</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oZM-va-PAW"/>
-                    <connections>
-                        <outlet property="recipeName" destination="Jw1-CB-Opg" id="xDN-V9-anp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMS-nM-7v9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

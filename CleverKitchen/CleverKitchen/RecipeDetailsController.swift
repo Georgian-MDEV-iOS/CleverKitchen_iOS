@@ -8,9 +8,5 @@
 import UIKit
 
 class RecipeDetailsController: UIViewController {
-
-    override func viewDidLoad() {
-        super .viewDidLoad()
-    }
-    
+ 
 }
