@@ -17,6 +17,10 @@
 		04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A5293805B0002E2BBA /* SignUpController.swift */; };
 		04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A729380D1C002E2BBA /* UIExtensions.swift */; };
 		04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A9293821D2002E2BBA /* CKTextField.swift */; };
+		E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8AD293EA73F00B96845 /* RecipeModel.swift */; };
+		E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B0293EA84400B96845 /* RecipeData.swift */; };
+		E573D8B3293EB2AE00B96845 /* ViewRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */; };
+		E573D8B5293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B4293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		04CB46A5293805B0002E2BBA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		04CB46A729380D1C002E2BBA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		04CB46A9293821D2002E2BBA /* CKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextField.swift; sourceTree = "<group>"; };
+		E573D8AD293EA73F00B96845 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		E573D8B0293EA84400B96845 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecipesController.swift; sourceTree = "<group>"; };
+		E573D8B4293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecipesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +72,13 @@
 		04CB468B2937FDB8002E2BBA /* CleverKitchen */ = {
 			isa = PBXGroup;
 			children = (
+				E573D8AF293EA83200B96845 /* Data */,
+				E573D8AC293EA70400B96845 /* Model */,
 				04CB468C2937FDB8002E2BBA /* AppDelegate.swift */,
 				04CB46A729380D1C002E2BBA /* UIExtensions.swift */,
 				04CB468E2937FDB8002E2BBA /* SceneDelegate.swift */,
 				04CB46922937FDB8002E2BBA /* Main.storyboard */,
+				E573D8B4293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift */,
 				04CB46A5293805B0002E2BBA /* SignUpController.swift */,
 				04CB46982937FDB9002E2BBA /* Assets.xcassets */,
 				04CB469A2937FDB9002E2BBA /* LaunchScreen.storyboard */,
@@ -75,8 +86,25 @@
 				04CB46A9293821D2002E2BBA /* CKTextField.swift */,
 				04CB469D2937FDB9002E2BBA /* Info.plist */,
 				04CB46952937FDB8002E2BBA /* CleverKitchen.xcdatamodeld */,
+				E573D8B2293EB2AE00B96845 /* ViewRecipesController.swift */,
 			);
 			path = CleverKitchen;
+			sourceTree = "<group>";
+		};
+		E573D8AC293EA70400B96845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E573D8AD293EA73F00B96845 /* RecipeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E573D8AF293EA83200B96845 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E573D8B0293EA84400B96845 /* RecipeData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +180,13 @@
 			files = (
 				04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */,
 				04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */,
+				E573D8B3293EB2AE00B96845 /* ViewRecipesController.swift in Sources */,
 				04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */,
 				04CB46A42938057B002E2BBA /* SignInController.swift in Sources */,
 				04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */,
+				E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */,
+				E573D8B5293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift in Sources */,
+				E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */,
 				04CB468D2937FDB8002E2BBA /* AppDelegate.swift in Sources */,
 				04CB468F2937FDB8002E2BBA /* SceneDelegate.swift in Sources */,
 			);
@@ -309,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
