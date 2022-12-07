@@ -17,6 +17,13 @@
 		04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A5293805B0002E2BBA /* SignUpController.swift */; };
 		04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A729380D1C002E2BBA /* UIExtensions.swift */; };
 		04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB46A9293821D2002E2BBA /* CKTextField.swift */; };
+		854253AB2940447E00FE498E /* WalkthroughController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253AA2940447E00FE498E /* WalkthroughController.swift */; };
+		854253D8294050E800FE498E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253D4294050E800FE498E /* User+CoreDataClass.swift */; };
+		854253D9294050E800FE498E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253D5294050E800FE498E /* User+CoreDataProperties.swift */; };
+		854253DA294050E800FE498E /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253D6294050E800FE498E /* Recipe+CoreDataClass.swift */; };
+		854253DB294050E800FE498E /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253D7294050E800FE498E /* Recipe+CoreDataProperties.swift */; };
+		854253DD2940575D00FE498E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253DC2940575D00FE498E /* HomeViewController.swift */; };
+		854253DF29405A8500FE498E /* AddRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854253DE29405A8500FE498E /* AddRecipesViewController.swift */; };
 		E5165759293EDB460058414D /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5165758293EDB460058414D /* RecipeDetailsController.swift */; };
 		E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8AD293EA73F00B96845 /* RecipeModel.swift */; };
 		E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573D8B0293EA84400B96845 /* RecipeData.swift */; };
@@ -37,6 +44,13 @@
 		04CB46A5293805B0002E2BBA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		04CB46A729380D1C002E2BBA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		04CB46A9293821D2002E2BBA /* CKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextField.swift; sourceTree = "<group>"; };
+		854253AA2940447E00FE498E /* WalkthroughController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughController.swift; sourceTree = "<group>"; };
+		854253D4294050E800FE498E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		854253D5294050E800FE498E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		854253D6294050E800FE498E /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		854253D7294050E800FE498E /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		854253DC2940575D00FE498E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		854253DE29405A8500FE498E /* AddRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipesViewController.swift; sourceTree = "<group>"; };
 		E5165758293EDB460058414D /* RecipeDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsController.swift; sourceTree = "<group>"; };
 		E573D8AD293EA73F00B96845 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		E573D8B0293EA84400B96845 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
@@ -74,14 +88,21 @@
 		04CB468B2937FDB8002E2BBA /* CleverKitchen */ = {
 			isa = PBXGroup;
 			children = (
+				854253D4294050E800FE498E /* User+CoreDataClass.swift */,
+				854253D5294050E800FE498E /* User+CoreDataProperties.swift */,
+				854253D6294050E800FE498E /* Recipe+CoreDataClass.swift */,
+				854253D7294050E800FE498E /* Recipe+CoreDataProperties.swift */,
 				E573D8AF293EA83200B96845 /* Data */,
 				E573D8AC293EA70400B96845 /* Model */,
 				04CB468C2937FDB8002E2BBA /* AppDelegate.swift */,
 				04CB46A729380D1C002E2BBA /* UIExtensions.swift */,
 				04CB468E2937FDB8002E2BBA /* SceneDelegate.swift */,
 				04CB46922937FDB8002E2BBA /* Main.storyboard */,
+				854253DC2940575D00FE498E /* HomeViewController.swift */,
+				854253AA2940447E00FE498E /* WalkthroughController.swift */,
 				E573D8B4293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift */,
 				04CB46A5293805B0002E2BBA /* SignUpController.swift */,
+				854253DE29405A8500FE498E /* AddRecipesViewController.swift */,
 				04CB46982937FDB9002E2BBA /* Assets.xcassets */,
 				04CB469A2937FDB9002E2BBA /* LaunchScreen.storyboard */,
 				04CB46A32938057B002E2BBA /* SignInController.swift */,
@@ -182,16 +203,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CB46AA293821D2002E2BBA /* CKTextField.swift in Sources */,
+				854253DA294050E800FE498E /* Recipe+CoreDataClass.swift in Sources */,
 				04CB46A6293805B0002E2BBA /* SignUpController.swift in Sources */,
 				E573D8B3293EB2AE00B96845 /* ViewRecipesController.swift in Sources */,
 				04CB46972937FDB8002E2BBA /* CleverKitchen.xcdatamodeld in Sources */,
+				854253DD2940575D00FE498E /* HomeViewController.swift in Sources */,
+				854253DF29405A8500FE498E /* AddRecipesViewController.swift in Sources */,
+				854253DB294050E800FE498E /* Recipe+CoreDataProperties.swift in Sources */,
 				04CB46A42938057B002E2BBA /* SignInController.swift in Sources */,
 				04CB46A829380D1C002E2BBA /* UIExtensions.swift in Sources */,
+				854253D8294050E800FE498E /* User+CoreDataClass.swift in Sources */,
 				E5165759293EDB460058414D /* RecipeDetailsController.swift in Sources */,
+				854253D9294050E800FE498E /* User+CoreDataProperties.swift in Sources */,
 				E573D8AE293EA73F00B96845 /* RecipeModel.swift in Sources */,
 				E573D8B5293EB66A00B96845 /* ViewRecipesCollectionViewCell.swift in Sources */,
 				E573D8B1293EA84400B96845 /* RecipeData.swift in Sources */,
 				04CB468D2937FDB8002E2BBA /* AppDelegate.swift in Sources */,
+				854253AB2940447E00FE498E /* WalkthroughController.swift in Sources */,
 				04CB468F2937FDB8002E2BBA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

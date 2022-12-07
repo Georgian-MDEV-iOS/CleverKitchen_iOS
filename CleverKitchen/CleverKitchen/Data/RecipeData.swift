@@ -9,8 +9,8 @@ import SwiftUI
 
 //MARK: -RECIPE DATA
 
-let recipesData: [Recipe] = [
-    Recipe(
+let recipesData: [RecipeModel] = [
+    RecipeModel(
         title: "Chicken",
         headline: "Chicken",
         image: "",
