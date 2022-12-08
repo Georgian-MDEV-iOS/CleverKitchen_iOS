@@ -17,7 +17,9 @@ class SignUpController : UIExtensionsController {
     
     @IBOutlet weak var passwordTextField: CKTextField!
     
-     var persistentContainer: NSPersistentContainer = {
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CleverKitchen")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -29,7 +31,8 @@ class SignUpController : UIExtensionsController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        signUpButton.layer.cornerRadius = 10
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
     
@@ -64,5 +67,8 @@ class SignUpController : UIExtensionsController {
     }
    
     @IBAction func signInAction(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
+        vc.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.pushViewController(vc, animated:true)
     }
 }
