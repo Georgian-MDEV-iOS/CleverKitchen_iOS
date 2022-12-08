@@ -53,38 +53,49 @@ class SignUpController : UIExtensionsController {
                 guard let fetchObject = try! context.fetch(fetchrequest) as? [User] else { return }
                 self.signInValues = fetchObject
                 let userValue = signInValues?.filter({$0.emailId == email})
-                if(userValue?.count ?? 0 == 0){
-                    let defaults = UserDefaults.standard
-                    defaults.set(email, forKey: "email")
-                    users.name = name
-                    users.password = password
-                    users.emailId = email
-                    UserDefaults.standard.synchronize()
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                    vc.navigationController?.setNavigationBarHidden(true, animated: true)
-                    self.navigationController?.pushViewController(vc, animated:true)
-                } else{
-                    var dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is already registered", preferredStyle: .alert)
-                    let signIn = UIAlertAction(title: "Sign In", style: .default, handler: { (action) -> Void in
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
+                
+                if(isValidEmail(email)){
+                    if(userValue?.count ?? 0 == 0){
+                        let defaults = UserDefaults.standard
+                        defaults.set(email, forKey: "email")
+                        users.name = name
+                        users.password = password
+                        users.emailId = email
+                        UserDefaults.standard.synchronize()
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
                         vc.navigationController?.setNavigationBarHidden(true, animated: true)
                         self.navigationController?.pushViewController(vc, animated:true)
-                     })
-                    
-                    let continueSignUp = UIAlertAction(title: "Continue", style: .default, handler: { (action) -> Void in
-                  
-                     })
-                    dialogMessage.addAction(signIn)
-                    dialogMessage.addAction(continueSignUp)
+                    } else{
+                        let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is already registered", preferredStyle: .alert)
+                        let signIn = UIAlertAction(title: "Sign In", style: .default, handler: { (action) -> Void in
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
+                            vc.navigationController?.setNavigationBarHidden(true, animated: true)
+                            self.navigationController?.pushViewController(vc, animated:true)
+                        })
+                        
+                        let continueSignUp = UIAlertAction(title: "Continue", style: .default)
+                        dialogMessage.addAction(signIn)
+                        dialogMessage.addAction(continueSignUp)
+                        self.present(dialogMessage, animated: true, completion: nil)
+                    }
+                }else{
+                    let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not valid", preferredStyle: .alert)
+                    let cancel = UIAlertAction(title: "Cancel", style: .default)
+                    dialogMessage.addAction(cancel)
                     self.present(dialogMessage, animated: true, completion: nil)
                 }
-                
             } catch {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
         
+    }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
     }
    
     @IBAction func signInAction(_ sender: Any) {

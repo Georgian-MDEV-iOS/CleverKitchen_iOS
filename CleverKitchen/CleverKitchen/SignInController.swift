@@ -43,21 +43,28 @@ class SignInController: UIExtensionsController {
         self.signInValues = fetchObject
         
         let userValue = signInValues?.filter({$0.emailId == emailId && $0.password == password})
-        if (userValue?.count ?? 0 > 0){
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            vc.navigationController?.setNavigationBarHidden(true, animated: true)
-            self.navigationController?.pushViewController(vc, animated:true)
-        }else{
-            var dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not registered", preferredStyle: .alert)
-            let signUp = UIAlertAction(title: "Sign Up", style: .default, handler: { (action) -> Void in
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpController") as! SignUpController
+        if(isValidEmail(emailId)){
+            if (userValue?.count ?? 0 > 0){
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
                 vc.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.navigationController?.pushViewController(vc, animated:true)
-             })
-            
-            let continueSignIn = UIAlertAction(title: "Continue", style: .default)
-            dialogMessage.addAction(signUp)
-            dialogMessage.addAction(continueSignIn)
+            }else{
+                let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not registered", preferredStyle: .alert)
+                let signUp = UIAlertAction(title: "Sign Up", style: .default, handler: { (action) -> Void in
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpController") as! SignUpController
+                    vc.navigationController?.setNavigationBarHidden(true, animated: true)
+                    self.navigationController?.pushViewController(vc, animated:true)
+                })
+                
+                let continueSignIn = UIAlertAction(title: "Continue", style: .default)
+                dialogMessage.addAction(signUp)
+                dialogMessage.addAction(continueSignIn)
+                self.present(dialogMessage, animated: true, completion: nil)
+            }
+        }else{
+            let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not valid", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .default)
+            dialogMessage.addAction(cancel)
             self.present(dialogMessage, animated: true, completion: nil)
         }
         
@@ -69,6 +76,14 @@ class SignInController: UIExtensionsController {
          signUpViewController.navigationController?.setNavigationBarHidden(true, animated: true)
          self.navigationController?.pushViewController(signUpViewController, animated: true)
      }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+   
     /*
      // MARK: - Navigation
 

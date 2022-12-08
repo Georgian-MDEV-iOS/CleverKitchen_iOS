@@ -2,7 +2,7 @@
 //  Recipe+CoreDataClass.swift
 //  CleverKitchen
 //
-//  Created by Sethuram Vijayakumar on 2022-12-06.
+//  Created by Chandu on 2022-12-06.
 //
 //
 
