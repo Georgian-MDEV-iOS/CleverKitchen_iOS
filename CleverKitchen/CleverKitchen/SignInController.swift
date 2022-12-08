@@ -33,24 +33,32 @@ class SignInController: UIExtensionsController {
     }
     
     @IBAction func onSignIn(_ sender: Any) {
-        guard let emaiId = emailAddress.text,!emaiId.isEmpty else {return}
+        guard let emailId = emailAddress.text,!emailId.isEmpty else {return}
         guard let password = password.text, !password.isEmpty else {return}
         
-        var context = persistentContainer.viewContext
-        let fetchrequet = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        let context = persistentContainer.viewContext
+        let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         
-        do{
-            guard let fetchObject = try! context.fetch(fetchrequet) as? [User] else { return }
-            self.signInValues = fetchObject
-        }catch{
-            print(error)
-            
-        }
-        let userValue = signInValues?.filter({$0.emailId == emaiId && $0.password == password})
-        if userValue?.count ?? 0 > 0{
+        guard let fetchObject = try! context.fetch(fetchrequest) as? [User] else { return }
+        self.signInValues = fetchObject
+        
+        let userValue = signInValues?.filter({$0.emailId == emailId && $0.password == password})
+        if (userValue?.count ?? 0 > 0){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             vc.navigationController?.setNavigationBarHidden(true, animated: true)
             self.navigationController?.pushViewController(vc, animated:true)
+        }else{
+            var dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not registered", preferredStyle: .alert)
+            let signUp = UIAlertAction(title: "Sign Up", style: .default, handler: { (action) -> Void in
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpController") as! SignUpController
+                vc.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.navigationController?.pushViewController(vc, animated:true)
+             })
+            
+            let continueSignIn = UIAlertAction(title: "Continue", style: .default)
+            dialogMessage.addAction(signUp)
+            dialogMessage.addAction(continueSignIn)
+            self.present(dialogMessage, animated: true, completion: nil)
         }
         
     }
