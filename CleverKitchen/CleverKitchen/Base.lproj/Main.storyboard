@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tb6-So-FaV">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -16,27 +16,27 @@
             <objects>
                 <viewController storyboardIdentifier="SignInController" id="BYZ-38-t0r" customClass="SignInController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-Wg-5cZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56.333333333333336"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="58.666666666666664"/>
                                 <color key="backgroundColor" name="BaseColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBarWave" translatesAutoresizingMaskIntoConstraints="NO" id="YQf-gh-9vt">
-                                <rect key="frame" x="0.0" y="56.333333333333336" width="375" height="93.666666666666657"/>
+                                <rect key="frame" x="0.0" y="58.666666666666664" width="390" height="97.333333333333343"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-YB-8b8">
-                                <rect key="frame" x="30" y="305.33333333333331" width="315" height="81.333333333333314"/>
+                                <rect key="frame" x="30" y="319.66666666666669" width="330" height="84.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello !!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb8-pO-qYk">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="40.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-IN-Mkh">
-                                        <rect key="frame" x="0.0" y="41.333333333333371" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="43" width="330" height="41.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -44,22 +44,22 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SQ7-24-dRa">
-                                <rect key="frame" x="30" y="416.66666666666669" width="315" height="243.66666666666669"/>
+                                <rect key="frame" x="30" y="434.33333333333326" width="330" height="253"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter email" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="3BZ-Bs-rkj" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="48.333333333333336"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter password" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="fWQ-n9-Ben" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="66" width="315" height="45.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="68.333333333333371" width="330" height="48"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baX-Eb-r0a">
-                                        <rect key="frame" x="0.0" y="131.66666666666669" width="315" height="46"/>
+                                        <rect key="frame" x="0.0" y="136.33333333333331" width="330" height="48.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
@@ -76,16 +76,16 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jj3-hK-Zsm">
-                                        <rect key="frame" x="0.0" y="197.66666666666669" width="315" height="46"/>
+                                        <rect key="frame" x="0.0" y="204.66666666666669" width="330" height="48.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-CJ-Pwb">
-                                                <rect key="frame" x="15" y="12.666666666666627" width="201.33333333333334" height="20.333333333333329"/>
+                                                <rect key="frame" x="15" y="13.999999999999998" width="212.66666666666666" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-IC-y9T">
-                                                <rect key="frame" x="216.33333333333334" y="6.3333333333332575" width="78.666666666666657" height="33"/>
+                                                <rect key="frame" x="227.66666666666671" y="7.6666666666666288" width="82.333333333333343" height="33"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                 <color key="tintColor" name="BaseColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -146,27 +146,27 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpController" id="pVz-jC-4VH" customClass="SignUpController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="imI-ql-6VT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCz-87-ttw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56.333333333333336"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="58.666666666666664"/>
                                 <color key="backgroundColor" name="BaseColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBarWave" translatesAutoresizingMaskIntoConstraints="NO" id="UOI-a8-u9k">
-                                <rect key="frame" x="0.0" y="56.333333333333343" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="58.666666666666657" width="390" height="78"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-Dv-i44">
-                                <rect key="frame" x="30" y="141.33333333333334" width="315" height="75"/>
+                                <rect key="frame" x="30" y="146.66666666666666" width="330" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-6m-bc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="31.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create An Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-fW-dRu">
-                                        <rect key="frame" x="0.0" y="45" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="46.333333333333343" width="330" height="31.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.38" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -174,28 +174,28 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="03p-y0-nnP">
-                                <rect key="frame" x="30" y="266.33333333333331" width="315" height="299.99999999999994"/>
+                                <rect key="frame" x="30" y="274.66666666666669" width="330" height="312.00000000000006"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pDF-qe-XUd" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="46.333333333333336"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IT7-Wd-UII" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="66.333333333333314" width="330" height="46.333333333333343"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eH0-E8-0FJ" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="128" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="132.66666666666663" width="330" height="46.333333333333343"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-Ca-Pgm">
-                                        <rect key="frame" x="0.0" y="192" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="199" width="330" height="46.333333333333343"/>
                                         <color key="backgroundColor" name="BaseColor"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -210,16 +210,16 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ott-5V-du0">
-                                        <rect key="frame" x="0.0" y="256.00000000000006" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="265.33333333333331" width="330" height="46.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SdP-cR-rUr">
-                                                <rect key="frame" x="20" y="11.666666666666627" width="195" height="20.333333333333329"/>
+                                                <rect key="frame" x="20" y="12.999999999999998" width="195" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-CD-6sb">
-                                                <rect key="frame" x="225" y="5.3333333333332575" width="80" height="33"/>
+                                                <rect key="frame" x="225" y="6.6666666666666288" width="95" height="33"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                 <color key="tintColor" name="BaseColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -279,14 +279,14 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="JAR-Bg-ukk" customClass="HomeViewController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTM-FA-jyK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="h2n-gu-ov9">
-                                <rect key="frame" x="93.666666666666671" y="152.66666666666669" width="187.66666666666663" height="168.66666666666669"/>
+                                <rect key="frame" x="97.666666666666686" y="157" width="195" height="175.66666666666663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8o-pB-y0Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="59.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="62.666666666666664"/>
                                         <color key="backgroundColor" name="BaseColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,7 +297,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zC-Rt-V9g">
-                                        <rect key="frame" x="0.0" y="109.33333333333333" width="187.66666666666666" height="59.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="112.66666666666669" width="195" height="63"/>
                                         <color key="backgroundColor" name="BaseColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,7 +310,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qZK-pU-foo">
-                                <rect key="frame" x="50" y="359.33333333333331" width="275" height="206.33333333333331"/>
+                                <rect key="frame" x="50" y="371.33333333333331" width="290" height="214.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">"A recipe has no soul.
 You, as a cook, must
@@ -322,12 +322,32 @@ Thomas Keller</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wr-sa-Tty">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56.333333333333336"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="58.666666666666664"/>
                                 <color key="backgroundColor" name="BaseColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBarWave" translatesAutoresizingMaskIntoConstraints="NO" id="zQ2-jq-wlg">
-                                <rect key="frame" x="0.0" y="56.333333333333329" width="375" height="56.333333333333329"/>
+                                <rect key="frame" x="0.0" y="58.666666666666657" width="390" height="58.333333333333343"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwM-so-qpu">
+                                <rect key="frame" x="145.66666666666666" y="782" width="99" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="JPk-HR-gNo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Logout">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" name="BaseColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogout:" destination="JAR-Bg-ukk" eventType="touchUpInside" id="xIa-qE-ZTp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TvB-4S-Y7b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -335,8 +355,10 @@ Thomas Keller</string>
                             <constraint firstItem="9wr-sa-Tty" firstAttribute="height" secondItem="CTM-FA-jyK" secondAttribute="width" multiplier="0.15" id="0qX-cL-ZkF"/>
                             <constraint firstItem="qZK-pU-foo" firstAttribute="centerY" secondItem="TvB-4S-Y7b" secondAttribute="centerY" constant="50" id="AVC-Ap-QTA"/>
                             <constraint firstItem="9wr-sa-Tty" firstAttribute="top" secondItem="CTM-FA-jyK" secondAttribute="top" id="CcU-qU-0fA"/>
+                            <constraint firstItem="KwM-so-qpu" firstAttribute="centerX" secondItem="TvB-4S-Y7b" secondAttribute="centerX" id="Ojd-5s-a5C"/>
                             <constraint firstItem="qZK-pU-foo" firstAttribute="height" secondItem="CTM-FA-jyK" secondAttribute="width" multiplier="0.55" id="TCZ-bd-roS"/>
                             <constraint firstItem="h2n-gu-ov9" firstAttribute="width" secondItem="CTM-FA-jyK" secondAttribute="width" multiplier="0.5" id="cFi-Tc-5fc"/>
+                            <constraint firstItem="KwM-so-qpu" firstAttribute="bottom" secondItem="TvB-4S-Y7b" secondAttribute="bottom" id="dRz-Z9-5Xo"/>
                             <constraint firstItem="h2n-gu-ov9" firstAttribute="top" secondItem="zQ2-jq-wlg" secondAttribute="bottom" constant="40" id="g0L-BI-xVe"/>
                             <constraint firstItem="9wr-sa-Tty" firstAttribute="leading" secondItem="CTM-FA-jyK" secondAttribute="leading" id="iGj-xv-01D"/>
                             <constraint firstItem="zQ2-jq-wlg" firstAttribute="trailing" secondItem="TvB-4S-Y7b" secondAttribute="trailing" id="kCZ-yH-YSO"/>
@@ -358,18 +380,18 @@ Thomas Keller</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdt-9u-atU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3725.9541984732823" y="16.901408450704228"/>
+            <point key="canvasLocation" x="3725.5999999999999" y="16.256157635467982"/>
         </scene>
         <!--Walkthrough Controller-->
         <scene sceneID="DmK-pf-UAC">
             <objects>
                 <viewController storyboardIdentifier="WalkthroughController" id="b4t-EN-M62" customClass="WalkthroughController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CAU-FC-5ne">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07b-mc-ghq">
-                                <rect key="frame" x="5" y="216.33333333333334" width="365" height="36.666666666666657"/>
+                                <rect key="frame" x="5" y="232.33333333333334" width="380" height="36.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Clever Kitchen">
                                         <attributes>
@@ -382,16 +404,16 @@ Thomas Keller</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Making your kitchen smarter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sR3-Mn-T3M">
-                                <rect key="frame" x="5" y="526" width="365" height="17.333333333333371"/>
+                                <rect key="frame" x="5" y="542" width="380" height="17.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dSR-Ho-gq1">
-                                <rect key="frame" x="5" y="576.66666666666663" width="365" height="35"/>
+                                <rect key="frame" x="5" y="592.66666666666663" width="380" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chf-EQ-3tc">
-                                        <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
@@ -410,7 +432,7 @@ Thomas Keller</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddX-JL-dF0">
-                                        <rect key="frame" x="187.66666666666663" y="0.0" width="177.33333333333337" height="35"/>
+                                        <rect key="frame" x="195" y="0.0" width="185" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
@@ -454,7 +476,7 @@ Thomas Keller</string>
             <objects>
                 <viewController storyboardIdentifier="ViewRecipesController" title="View Recipes Controller Scene" id="B9N-QZ-WiO" customClass="ViewRecipesController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ryU-KM-0dZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sxd-OG-wUO">
@@ -539,6 +561,7 @@ Thomas Keller</string>
                                             <outlet property="recipeImage" destination="70h-mK-A7e" id="hyf-Yc-N9o"/>
                                             <outlet property="recipeIngredients" destination="Hg5-oH-S1N" id="st2-q4-hG6"/>
                                             <outlet property="recipeName" destination="se7-0c-Llj" id="zvL-nY-XSx"/>
+                                            <outlet property="userName" destination="dIz-GT-hMb" id="3OJ-eq-UfB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -548,7 +571,7 @@ Thomas Keller</string>
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9Z-TQ-1Jn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="BaseColor"/>
                             </view>
@@ -570,26 +593,26 @@ Thomas Keller</string>
             <objects>
                 <viewController storyboardIdentifier="RecipeDetailsController" title="Recipe Details Scene" id="013-ne-sVj" customClass="RecipeDetailsController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gzh-lB-l88">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butter Chicken" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-CB-Opg">
-                                <rect key="frame" x="15" y="57" width="344" height="24"/>
+                                <rect key="frame" x="15" y="57" width="359" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe3" translatesAutoresizingMaskIntoConstraints="NO" id="5iO-fP-3Dn">
-                                <rect key="frame" x="15" y="91.000000000000014" width="345" height="174.33333333333337"/>
+                                <rect key="frame" x="15" y="91.000000000000014" width="360" height="181.33333333333337"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butter Chicken: A classic Indian dish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvV-nl-nKg">
-                                <rect key="frame" x="15" y="275.33333333333331" width="345" height="20.333333333333314"/>
+                                <rect key="frame" x="15" y="282.33333333333331" width="360" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDT-2N-DjQ">
-                                <rect key="frame" x="15.333333333333343" y="338" width="344.33333333333326" height="249"/>
+                                <rect key="frame" x="16" y="349.33333333333337" width="358" height="258.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to make butter chiken?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2G-FC-3yT">
                                         <rect key="frame" x="8" y="8" width="212" height="21"/>
@@ -658,7 +681,7 @@ Thomas Keller</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tb6-So-FaV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OLf-Z8-ZdR">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -675,46 +698,46 @@ Thomas Keller</string>
             <objects>
                 <viewController storyboardIdentifier="AddRecipesViewController" id="uEK-Ws-IFP" customClass="AddRecipesViewController" customModule="CleverKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S3c-tI-mED">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G23-ra-UGy">
-                                <rect key="frame" x="15" y="207.66666666666663" width="345" height="375"/>
+                                <rect key="frame" x="15" y="215" width="360" height="390"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S8-8P-qE5">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="45.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="48.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recipe Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEM-IG-xu9" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65.666666666666657" width="345" height="46"/>
+                                        <rect key="frame" x="0.0" y="68.333333333333314" width="360" height="48.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <color key="tintColor" name="BaseColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30N-z0-qPA">
-                                        <rect key="frame" x="0.0" y="131.66666666666666" width="345" height="45.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="136.66666666666669" width="360" height="48.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recipe Ingridients" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-8I-3LR" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="197.33333333333334" width="345" height="46"/>
+                                        <rect key="frame" x="0.0" y="205" width="360" height="48.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <color key="tintColor" name="BaseColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lER-TY-c3l">
-                                        <rect key="frame" x="0.0" y="263.33333333333337" width="345" height="45.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="273.33333333333331" width="360" height="48.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recipe Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="As9-MO-1ZK" customClass="CKTextField" customModule="CleverKitchen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="329" width="345" height="46"/>
+                                        <rect key="frame" x="0.0" y="341.66666666666663" width="360" height="48.333333333333314"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -722,20 +745,20 @@ Thomas Keller</string>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjW-zl-cxD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56.333333333333336"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="58.666666666666664"/>
                                 <color key="backgroundColor" name="BaseColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NavBarWave" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-gh-cB7">
                                 <rect key="frame" x="0.0" y="59" width="428" height="101"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfp-8x-Zyc">
-                                <rect key="frame" x="15" y="141.33333333333334" width="345" height="56.333333333333343"/>
+                                <rect key="frame" x="15" y="146.66666666666666" width="360" height="58.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-LF-zil">
-                                <rect key="frame" x="285" y="622.66666666666663" width="75" height="54.333333333333371"/>
+                                <rect key="frame" x="297" y="645" width="78" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                     <color key="baseBackgroundColor" name="BaseColor"/>
@@ -745,7 +768,7 @@ Thomas Keller</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZa-yy-XLf">
-                                <rect key="frame" x="0.0" y="59" width="84" height="32"/>
+                                <rect key="frame" x="0.0" y="59" width="87" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>

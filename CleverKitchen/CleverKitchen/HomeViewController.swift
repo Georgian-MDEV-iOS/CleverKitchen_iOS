@@ -36,4 +36,11 @@ class HomeViewController: UIExtensionsController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "email")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
+        vc.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

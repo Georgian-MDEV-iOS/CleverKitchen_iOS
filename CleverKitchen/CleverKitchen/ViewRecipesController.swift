@@ -27,6 +27,8 @@ class ViewRecipesController: UIViewController, UICollectionViewDataSource, UICol
        return container
    }()
     
+    var userValue = [User]()
+    var userName : String = ""
     override func viewDidLoad() {
         super .viewDidLoad()
     }
@@ -36,16 +38,36 @@ class ViewRecipesController: UIViewController, UICollectionViewDataSource, UICol
         self.recipeValue?.removeAll()
         var context = persistentContainer.viewContext
         let fetchrequet = NSFetchRequest<NSFetchRequestResult>(entityName: "Recipe")
+        let defaults = UserDefaults.standard
+        let currentUser = defaults.object(forKey: "email") as! String
         
         do{
+         
             guard let fetchObject = try! context.fetch(fetchrequet) as? [Recipe] else { return }
-            self.recipeValue = fetchObject
-            self.recipeCollectionView.reloadData()
+            let recipeVal = fetchObject.filter({ $0.emailId == currentUser })
+            if(recipeVal.count==0){
+                let dialogMessage = UIAlertController(title: "Oops!!", message: "There are no recipes available", preferredStyle: .alert)
+                let goBack = UIAlertAction(title: "Go Back", style: .default, handler: { (action) -> Void in
+                    self.navigationController?.popViewController(animated:true)
+                })
+                dialogMessage.addAction(goBack)
+                self.present(dialogMessage, animated: true, completion: nil)
+            }else{
+                self.recipeValue = recipeVal
+                self.recipeCollectionView.reloadData()
+            }
         }catch{
             print(error)
             
         }
+        
+        let fetchUserRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        guard let fetchUserObject = try! context.fetch(fetchUserRequest) as? [User] else { return }
     
+        userValue = fetchUserObject.filter({$0.emailId == currentUser})
+        for value in userValue{
+            self.userName =  value.name ?? ""
+        }
         
     }
     
@@ -59,7 +81,7 @@ class ViewRecipesController: UIViewController, UICollectionViewDataSource, UICol
         cell.recipeName.text = recipeValue?[indexPath.item].recipeName ?? ""
         cell.recipeImage.image =  UIImage(named: "recipe3")
         cell.recipeIngredients.text = recipeValue?[indexPath.item].ingredients
-    
+        cell.userName.text = self.userName
         
         cell.contentView.layer.cornerRadius = 4.0
         cell.contentView.layer.borderWidth = 1.0
