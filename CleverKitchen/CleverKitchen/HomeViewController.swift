@@ -9,9 +9,12 @@ import UIKit
 
 class HomeViewController: UIExtensionsController {
 
+    @IBOutlet weak var viewRecipeButton: UIButton!
+    @IBOutlet weak var addRecipeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewRecipeButton.layer.cornerRadius = 10;
+        addRecipeButton.layer.cornerRadius = 10;
         // Do any additional setup after loading the view.
     }
     

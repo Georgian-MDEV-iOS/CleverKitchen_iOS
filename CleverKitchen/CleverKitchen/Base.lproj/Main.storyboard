@@ -351,6 +351,10 @@ Thomas Keller</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LYi-zx-PpD"/>
+                    <connections>
+                        <outlet property="addRecipeButton" destination="9zC-Rt-V9g" id="kfl-Xd-0yd"/>
+                        <outlet property="viewRecipeButton" destination="t8o-pB-y0Y" id="e3n-bo-o1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdt-9u-atU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -582,6 +586,11 @@ Thomas Keller</string>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WIo-9c-usk">
+                                <rect key="frame" x="-5" y="0.0" width="398" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BaseColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zx7-97-p3I"/>
