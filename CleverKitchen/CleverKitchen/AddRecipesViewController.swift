@@ -58,6 +58,9 @@ class AddRecipesViewController: UIExtensionsController {
     }
     
     @IBAction func backAction(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        vc.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.pushViewController(vc, animated:true)
     }
     
 
