@@ -40,9 +40,6 @@ class SignInController: UIExtensionsController {
         let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         
         guard let fetchObject = try! context.fetch(fetchrequest) as? [User] else { return }
-        
-        
-        
         self.signInValues = fetchObject
       
         let userValue = signInValues?.filter({ $0.emailId == emailId && $0.password == password })

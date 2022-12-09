@@ -45,35 +45,40 @@ class SignUpController : UIExtensionsController {
         guard let password = passwordTextField.text,!password.isEmpty else{return}
        
         let context = persistentContainer.viewContext
+        
+        let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        guard let fetchObject = try! context.fetch(fetchrequest) as? [User] else { return }
+        self.signInValues = fetchObject
+        
         let users = User(context: persistentContainer.viewContext)
         let userValue = signInValues?.filter({$0.emailId == email})
         
         if(isValidEmail(email)){
+            print(userValue?.count)
             if(userValue?.count ?? 0 == 0){
                 print(name)
                 users.name = name
                 users.password = password
                 users.emailId = email
                 
-        if context.hasChanges {
-            do {
-                try context.save()
-                let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-                guard let fetchObject = try! context.fetch(fetchrequest) as? [User] else { return }
-                self.signInValues = fetchObject
-     
-                let defaults = UserDefaults.standard
-                defaults.set(email, forKey: "email")
-                UserDefaults.standard.synchronize()
-                   
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                vc.navigationController?.setNavigationBarHidden(true, animated: true)
-                self.navigationController?.pushViewController(vc, animated:true)
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                    if context.hasChanges{
+                        do {
+                            try context.save()
+                            let defaults = UserDefaults.standard
+                            defaults.set(email, forKey: "email")
+                            UserDefaults.standard.synchronize()
+                            
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                            vc.navigationController?.setNavigationBarHidden(true, animated: true)
+                            self.navigationController?.pushViewController(vc, animated:true)
+                        } catch {
+                            let nserror = error as NSError
+                            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                        }
+                    }
+                
             }
-        } else {
+        else {
             let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is already registered", preferredStyle: .alert)
             let signIn = UIAlertAction(title: "Sign In", style: .default, handler: { (action) -> Void in
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
@@ -86,13 +91,14 @@ class SignUpController : UIExtensionsController {
              dialogMessage.addAction(continueSignUp)
              self.present(dialogMessage, animated: true, completion: nil)
             }
-           }else{
+        }
+        else{
                 let dialogMessage = UIAlertController(title: "Oops!!", message: "Email Id is not valid", preferredStyle: .alert)
                 let cancel = UIAlertAction(title: "Cancel", style: .default)
                 dialogMessage.addAction(cancel)
                 self.present(dialogMessage, animated: true, completion: nil)
           }
-        }
+        
         
     }
     
