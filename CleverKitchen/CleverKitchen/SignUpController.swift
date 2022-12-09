@@ -54,7 +54,7 @@ class SignUpController : UIExtensionsController {
         let userValue = signInValues?.filter({$0.emailId == email})
         
         if(isValidEmail(email)){
-            print(userValue?.count)
+            
             if(userValue?.count ?? 0 == 0){
                 print(name)
                 users.name = name

@@ -36,7 +36,7 @@ class ViewRecipesController: UIViewController, UICollectionViewDataSource, UICol
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.recipeValue?.removeAll()
-        var context = persistentContainer.viewContext
+        let context = persistentContainer.viewContext
         let fetchrequet = NSFetchRequest<NSFetchRequestResult>(entityName: "Recipe")
         let defaults = UserDefaults.standard
         let currentUser = defaults.object(forKey: "email") as! String
